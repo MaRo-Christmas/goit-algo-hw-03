@@ -18,7 +18,7 @@ def recursive_copy(source_dir, destination_dir):
                 os.makedirs(file_destintation_dir, exist_ok=True)
                 shutil.copy2(source_item, file_destintation_dir)
     except Exception as e:
-        print(f"An error occured {e}")
+        print(f"Error occured {e}")
 
 def main():
     parser = argparse.ArgumentParser(description="Recursively copy files and sort them by extension.")
