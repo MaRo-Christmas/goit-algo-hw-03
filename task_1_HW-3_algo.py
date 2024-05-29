@@ -21,9 +21,9 @@ def recursive_copy(source_dir, destination_dir):
         print(f"Error occured {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Recursively copy files and sort them by extension.")
-    parser.add_argument("source_dir", help="Source directory path" )
-    parser.add_argument("destination_dir",  nargs='?', default='dist', help="Destination directory path (default: 'dist')")
+    parser = argparse.ArgumentParser(description="Рекурсивне копіювання файлів і сортування їх за розширенням.")
+    parser.add_argument("source_dir", help="Шлях до вихідної директорії" )
+    parser.add_argument("destination_dir",  nargs='?', default='dist', help="Шлях до директорії призначення (default: 'dist')")
     args = parser.parse_args()
     recursive_copy(args.source_dir, args.destination_dir)
 
